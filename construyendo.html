@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>WayoSapiens Music</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="mtz/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styleplayer.css">
+</head>
+<body class="fondo">
+	<!--Like facebook-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
+  	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!--Cabecera-->
+	<header>
+		<nav class="transparent">
+		  <div class="nav-wrapper">
+		  	<a class="brand-logo" href="index.html"><img class="cuadrar" src="img/logows.png" width="94" height="53"></a>	
+		  			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				      <li><a href="top7r.html">Top 7 Reggaetón</a></li>
+				      <li><a href="construyendo.html.html">Top 7 Electrónica</a></li>
+				      <li><a href="construyendo.html">Mix's<span class="new badge">4!</span></a></li>
+				      <li><a href="construyendo.html">Reggaetón Vs. Electrónica<span class="new badge">3!</span></a></li>
+				    </ul>		    
+		  </div>
+		</nav>
+	</header>
+	<!--Fin Cabecera-->
+	<!--Cuerpo-->
+	<div class="row">
+		<div class="col s3 m3 l3 tabs-wrapper">
+			<div id="tar" class="card purple accent-4">
+			 	<div id="centrar" class="card-content white-text" >
+			 		<h5><i class="mdi-action-account-circle"></i>MrDjWayo</h5>
+			 		<hr>
+			 	    <img src="img/logous.png" width="100" height="100">
+			 	    <hr>
+			 		<p>MrDjWayo es un apasionado musical que gusta de todos los géneros, y que se divierte como ninguno escuchando música.</p>
+			 		<h5><i class="mdi-image-blur-on"></i><i class="mdi-image-blur-on"></i><i class="mdi-image-blur-on"></i></h5>
+			 	</div>
+			 </div>
+		</div>
+		<div class="col s6 6 l6">
+			<div id="tar" class="card purple accent-4">
+			 	<div class="card-content white-text" >
+			 		<h5><i class="mdi-image-tag-faces"></i> Zona en construcción</h5>
+			 		<p>Subiremos contenido muy pronto. Estén pendientes.</p>
+			 		<div id="trans" class="transparent">
+						<div class="card-content white-text">
+							<img class="responsive-img" src="img/logows.png">
+						</div>
+					</div>
+			 	</div>
+			 </div>
+		</div>
+		<div class="col s3 m3 l3">
+			<div id="tar" class="card purple accent-4">
+			 	<div class="card-content white-text" >
+			 		<h5><i class="mdi-av-my-library-music"></i> WayoSapiens</h5>
+			 		<div class="fb-page" data-href="https://www.facebook.com/WayoSapiens" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/WayoSapiens"><a href="https://www.facebook.com/WayoSapiens">WayoSapiens</a></blockquote></div></div>
+			 	</div>
+			 </div>
+		</div>
+	</div>
+	<!--Fin Cuerpo-->
+	<!--Pie de página-->
+	<footer class="purple accent-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Escucha la mejor música de la red.</h5>
+                <p class="grey-text text-lighten-4">Si te gustó el contenido del blog no dudes en comentar estaré agradecido.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Redes Sociales</h5>
+                <ul>
+                	<div class="row">
+                		<div class="col s2 m2 l2">
+                			<a href="https://www.facebook.com/WayoSapiens"><img class="responsive-img" src="img/Facebook.png" width="50" height="50"></a>
+                		</div>
+                		<div class="col s2 m2 l2">
+                			<a href="https://www.youtube.com/MrDjwayo"><img class="responsive-img" src="img/YouTube.png" width="50" height="50"></a>
+                		</div>
+                		<div class="col s2 m2 l2">
+                			<div class="fb-like" data-href="https://www.facebook.com/WayoSapiens" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+                		</div>
+                	</div>
+                  <li><a class="waves-effect waves-light btn modal-trigger" href="https://www.youtube.com/subscription_center?add_user=MrDjwayo">Suscríbete</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2016 Copyright WayoSapiens</div>
+          </div>
+    </footer>
+	<!--Fin Pie de página-->
+	<div id="bg"></div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="mtz/materialize.min.js"></script>
+	<script src="js/audioplayer.js"></script>
+	<script>
+    $( function()
+    {
+        $( 'audio' ).audioPlayer();
+    });
+	</script>
+</body>
+</html>
